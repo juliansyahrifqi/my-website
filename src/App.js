@@ -1,12 +1,22 @@
-import Navbar from './components/Navbar';
+import Header from './parts/Header';
+import Home from './pages/Home';
+import Article from './pages/Article';
+
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      
-        <Navbar />
+    <Router>
+      <div className="App">
+          <Header />
 
-    </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/articles/:id" element={<Article />} />
+          </Routes>
+      </div>
+    </Router>
   );
 }
 
