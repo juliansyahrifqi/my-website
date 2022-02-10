@@ -2,9 +2,9 @@ import React from 'react';
 import testImage from "../assets/image-1.jpg";
 import userPhoto from "../assets/user.jpg";
 
-function Blog({title, name}) {
+function Blog({category, title, name, imageSrc}) {
     return (
-      <div className="card p-6 rounded-3xl">
+      <div className="card p-6 rounded-3xl transition duration-150 ease-in hover:bg-hover-card">
         <img src={testImage} className="w-full rounded-3xl" />
 
         <p className="mt-3 text-sm font-normal" style={{ color: "#B8BCC2" }}>
@@ -15,7 +15,10 @@ function Blog({title, name}) {
           Rekomendasi Playlist Buat Ngoding ala Gweh
         </h1>
 
-        <p className="text-sm mt-3 text-base font-normal" style={{ color: "#B8BCC2" }}>
+        <p
+          className="text-sm mt-3 text-base font-normal"
+          style={{ color: "#B8BCC2" }}
+        >
           Pernah ga sih waktu ngoding kalian jenuh, atau mungkin playlist
           ngoding kalian udah sedikit membosankan? Nah kali ini gweh mau saranin
           nih playlist . . .
