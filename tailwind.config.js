@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         "hover-card": "#1F2B42",
+        "hover-border": "#4A6597",
       },
     },
   },

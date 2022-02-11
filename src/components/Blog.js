@@ -4,7 +4,7 @@ import userPhoto from "../assets/user.jpg";
 
 function Blog({category, title, name, imageSrc}) {
     return (
-      <div className="card p-6 rounded-3xl transition duration-150 ease-in hover:bg-hover-card">
+      <div className="card p-6 rounded-3xl transition duration-150 ease-in hover:bg-hover-card transition ease-in-out hover:outline outline-2 outline-hover-border duration-150">
         <img src={testImage} className="w-full rounded-3xl" />
 
         <p className="mt-3 text-sm font-normal" style={{ color: "#B8BCC2" }}>

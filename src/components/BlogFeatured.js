@@ -4,7 +4,7 @@ import userPhoto from '../assets/user.jpg';
 
 function BlogFeatured({ category, date, title, description, imageSrc  }) {
   return (
-    <div className="card w-full p-6 rounded-3xl transition duration-150 ease-in hover:bg-hover-card">
+    <div className="box-border card w-full p-6 rounded-3xl hover:bg-hover-card transition ease-in-out hover:outline outline-2 outline-hover-border duration-150">
       <div className="md:flex items-stretch">
         <img src={imageSrc} className="md:w-1/2 rounded-3xl" />
 
