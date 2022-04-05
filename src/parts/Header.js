@@ -22,7 +22,7 @@ function Home() {
           >
             Open
           </button>
-          <a href={`user-profile}`}>
+          <a href={`/`}>
             <img src={logo} alt="user-pic" className="w-10 h-10" />
           </a>
         </div>
