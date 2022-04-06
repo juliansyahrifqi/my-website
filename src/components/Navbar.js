@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png';
-import searchIcon from '../assets/search.png';
+
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
       >
         <div className="md:container mx-auto">
           <div className="flex justify-between p-4 items-center">
-            <div className="logo w-16">
+            <div className="logo w-12">
               <Link to="/">
                 <img src={logo} alt="logo" className="w-16" />
               </Link>
