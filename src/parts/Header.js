@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import logo from "../assets/logo.png";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
@@ -11,8 +13,7 @@ function Home() {
         <Navbar />
       </div>
       <div
-        className="flex md:hidden flex-row"
-        style={{ backgroundColor: "#070F1E" }}
+        className="flex md:hidden flex-row bg-[#070F1E]"
       >
         <div className="p-4 w-full flex flex-row justify-between items-center shadow-md">
           <button
@@ -22,9 +23,9 @@ function Home() {
           >
             Open
           </button>
-          <a href={`/`}>
+          <Link to={`/`}>
             <img src={logo} alt="user-pic" className="w-10 h-10" />
-          </a>
+          </Link>
         </div>
 
         {toggleSidebar && (

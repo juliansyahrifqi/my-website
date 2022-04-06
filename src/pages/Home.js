@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import BlogPost from '../components/BlogPost';
-import BlogPostFeatured from '../components/BlogPostFeatured';
-
-import { blogQuery } from '../utils/blogQuery';
 
 function Home() {  
    return (
