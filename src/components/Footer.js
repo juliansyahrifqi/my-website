@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-      <footer className="bg-[#070F1E] text-white text-center fixed inset-x-0 bottom-0 pt-4">
+      <footer className="bg-[#070F1E] text-white text-center pt-4 mt-auto">
         <p>Reach me out</p>
 
         <div className="d-flex inline-flex items-center justify-center mt-3">

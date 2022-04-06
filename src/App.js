@@ -2,6 +2,7 @@ import Header from './parts/Header';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Footer from './components/Footer';
+import Project from './pages/Project';
 
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -9,15 +10,18 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="App">
-          <Header />
+      <div className="App flex flex-col h-screen justify-between">
+        <Header />
 
+        <div className="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-4xl xl:px-0">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/project" element={<Project />} />
           </Routes>
+        </div>
 
-          <Footer />
+        <Footer />
       </div>
     </Router>
   );
