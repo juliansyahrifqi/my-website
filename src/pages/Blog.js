@@ -20,17 +20,14 @@ function Blog() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': "*",
         },
         body: JSON.stringify({ query }),
       });
 
       const responseData = await response.json();
 
-      console.log(responseData.data.user);
-
-      setBlogs(responseData.data.user);
       setBlogFeatured(responseData.data.user.publication.posts[0]);
+      setBlogs(responseData.data.user);
       setLoading(false);
     }
 

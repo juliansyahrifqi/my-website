@@ -11,15 +11,15 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/rifqi-pratama-juliansyah/"
-              class="rounded-sm cursor-newtab"
+              className="rounded-sm cursor-newtab"
             >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
-                class="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
+                className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,15 +34,15 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/juliansyahrifqi"
-              class="rounded-sm cursor-newtab"
+              className="rounded-sm cursor-newtab"
             >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
-                class="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
+                className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,15 +57,15 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/juliansyahrifqi"
-              class="rounded-sm cursor-newtab"
+              className="rounded-sm cursor-newtab"
             >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
-                class="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
+                className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-white"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer-copyright text-xs bg-[#040914] mt-3 p-1">
+        <div className="footer-copyright text-xs text-gray-400 bg-[#040914] mt-3 p-1">
           © Rifqi Pratama Juliansyah 2022
         </div>
       </footer>
