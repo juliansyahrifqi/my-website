@@ -9,9 +9,9 @@ function ActivityCard({ activity }) {
           className={`py-4 px-6 rounded-lg ${activity.backgroundColor} h-full w-full duration-200`}
         >
           <h1 className="text-xl font-bold tracking-tight text-white sm:text-xl md:text-2xl">
-            <span className="pr-2 text-white" role="img" aria-label="wave">
+            {/* <span className="pr-2 text-white" role="img" aria-label="wave">
               {activity.icon}
-            </span>
+            </span> */}
             {activity.title}
           </h1>
           <p className="text-white font-normal mt-4">
