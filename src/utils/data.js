@@ -31,3 +31,24 @@ export const activities = [
     description: ` I like UI design, sometimes I design some UI for my projects. I usually design on Figma.`,
   },
 ];
+
+export const readingLists = [
+  {
+    title: "The Demon-Haunted World: Sains Penerang Kegelapan",
+    author: "Carl Sagan",
+    currentPages: 180,
+    totalPages: 459,
+  },
+  {
+    title: "Sapiens: Riwayat Singkat Umat Manusia",
+    author: "Yuval Noah Harari",
+    currentPages: 512,
+    totalPages: 512,
+  },
+  {
+    title: "Mitos Dari Lebak: Telaah Kritis Peran Revolusioner Multatuli",
+    author: "Robert Nieuwenhuys",
+    currentPages: 140,
+    totalPages: 140,
+  }
+];

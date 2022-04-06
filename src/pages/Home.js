@@ -1,8 +1,9 @@
 import React from 'react';
 
 import ActivityCard from '../components/ActivityCard';
+import ReadingList from '../components/ReadingList';
 
-import { activities } from '../utils/data';
+import { activities, readingLists } from '../utils/data';
 
 function Home() {  
    return (
@@ -28,10 +29,20 @@ function Home() {
            </h1>
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-             { activities.map((activity, index) => (
-                 <ActivityCard activity={activity} key={index}/>
+             {activities.map((activity, index) => (
+               <ActivityCard activity={activity} key={index} />
              ))}
            </div>
+         </div>
+
+         <div className="reading-list">
+           <h1 className="text-center text-3xl text-white font-medium mt-14">
+             Reading List
+           </h1>
+
+            { readingLists.map((readingList, index) => (
+                <ReadingList list={readingList} key={index}/>
+            ))}
          </div>
        </div>
      </div>
