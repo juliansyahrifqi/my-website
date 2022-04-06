@@ -22,7 +22,7 @@ function Navbar() {
               style={{ color: "#B8BCC2" }}
             >
               <li className="mx-5 hover:text-white transition-colors duration-500 cursor-pointer">
-                <Link to={`/articles/frontend`}>
+                <Link to={`/articles`}>
                   Frontend
                 </Link>
               </li>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import Blog from '../components/Blog';
-import BlogFeatured from '../components/BlogFeatured';
+import BlogPost from '../components/BlogPost';
+import BlogPostFeatured from '../components/BlogPostFeatured';
 
 import { blogQuery } from '../utils/blogQuery';
 
@@ -38,8 +38,8 @@ function Home() {
 
 
   if(loading) return (
-    <div class="loading">
-      <div class="lds-ripple">
+    <div className="loading">
+      <div className="lds-ripple">
         <div></div>
         <div></div>
       </div>
@@ -49,7 +49,7 @@ function Home() {
   return (
     <div className="blog-post" style={{ backgroundColor: "#0E182A" }}>
       <div className="blog-featured px-8 pt-8">
-        <BlogFeatured
+        <BlogPostFeatured
           blog={blogFeatured}
         />
       </div>
@@ -58,7 +58,7 @@ function Home() {
         {
           blogs.publication?.posts?.map((blog, index) => {
             return (
-              <Blog key={index} blog={blog} />
+              <BlogPost key={index} blog={blog} />
             ); 
           })
         }

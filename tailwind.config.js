@@ -3,8 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "hover-card": "#1F2B42",
-        "hover-border": "#4A6597",
+        
       },
     },
   },
