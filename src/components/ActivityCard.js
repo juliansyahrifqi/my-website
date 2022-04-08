@@ -3,7 +3,7 @@ import React from 'react';
 function ActivityCard({ activity }) {
     return (
       <div
-        className={`cursor-pointer p-[10px] outline outline-4 ${activity.outlineColor} rounded-lg`}
+        className={`cursor-pointer p-[10px] outline outline-4 ${activity.outlineColor} rounded-lg duration-300 hover:scale-[1.04]`}
       >
         <div
           className={`py-4 px-6 rounded-lg ${activity.backgroundColor} h-full w-full duration-200`}

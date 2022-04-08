@@ -3,7 +3,7 @@ import React from 'react';
 function ReadingList({ list }) {
     return (
       <div className="reading-list-item mt-8 cursor-pointer">
-        <div className="w-full bg-gray-800  hover:bg-slate-800 hover:outline outline-slate-700 rounded-md p-4">
+        <div className="w-full bg-gray-800  hover:bg-slate-800 duration-300 hover:outline outline-slate-700 rounded-md p-4">
           <div className="md:flex justify-between">
             <div className="reading-title text-white">{list.title}</div>
 
