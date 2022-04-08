@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import BlogPost from "../components/BlogPost";
 import BlogPostFeatured from "../components/BlogPostFeatured";
+import LoadingRipple from "../components/LoadingRipple";
 
 import { blogQuery } from "../utils/blogQuery";
 
@@ -36,12 +37,7 @@ function Blog() {
 
   if (loading)
     return (
-      <div className="loading">
-        <div className="lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+      <LoadingRipple />
     );
 
   return (
