@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Footer from './components/Footer';
 import Project from './pages/Project';
+import DetailBlog from './pages/DetailBlog';
 
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<DetailBlog />} />
             <Route path="/project" element={<Project />} />
           </Routes>
         </div>

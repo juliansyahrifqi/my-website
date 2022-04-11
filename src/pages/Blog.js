@@ -48,7 +48,11 @@ function Blog() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
         {blogs.publication?.posts?.map((blog, index) => {
-          return <BlogPost key={index} blog={blog} />;
+          return (
+            <a href={`blog/${blog.slug}`}>
+              <BlogPost key={index} blog={blog} />
+            </a>
+          );
         })}
       </div>
     </div>
