@@ -26,3 +26,27 @@ export const blogQuery = (username) => {
 
     return query;
 }
+
+/**
+ * @param {string} slug
+ * @param {string} hostname
+ * @return graphql query
+ */
+export const blogDetailQuery = (slug, hostname) => {
+    const query = `
+        {
+            post(slug: "${slug}", hostname: "${hostname}") {
+                slug,
+                title,
+                dateAdded,
+                contentMarkdown,
+                coverImage,
+                author {
+                    name
+                }
+            }
+        }
+    `;
+
+    return query;
+}

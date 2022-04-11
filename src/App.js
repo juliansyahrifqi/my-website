@@ -14,7 +14,7 @@ function App() {
       <div className="App flex flex-col h-screen justify-between">
         <Header />
 
-        <div className="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-4xl xl:px-0">
+        <div className="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-4xl xl:px-0 w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />

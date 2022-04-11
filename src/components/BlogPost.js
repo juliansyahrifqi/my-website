@@ -4,7 +4,7 @@ import { formatDate } from '../utils/utils';
 
 function BlogPost({ blog }) {
     return (
-      <div className="card p-6 rounded-xl transition duration-150 ease-in hover:bg-[#1F2B42] hover:outline outline-2 outline-[#4A6597] duration-150 cursor-pointer">
+      <div className="card p-6 rounded-xl transition duration-150 ease-in hover:bg-[#1F2B42] hover:outline outline-2 outline-[#4A6597] duration-150 cursor-pointer h-full">
         <img src={blog.coverImage} className="w-full rounded-2xl" />
 
         <p className="mt-3 text-xs font-normal" style={{ color: "#B8BCC2" }}>
