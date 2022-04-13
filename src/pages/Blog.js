@@ -41,21 +41,23 @@ function Blog() {
     );
 
   return (
-    <div className="blog-post" style={{ backgroundColor: "#0E182A" }}>
-      <div className="blog-featured px-8 pt-8">
-        <BlogPostFeatured blog={blogFeatured} />
-      </div>
+    <main>
+      <article className="blog-post" style={{ backgroundColor: "#0E182A" }}>
+        <section className="blog-featured px-8 pt-8">
+          <BlogPostFeatured blog={blogFeatured} />
+        </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
-        {blogs.publication?.posts?.map((blog, index) => {
-          return (
-            <a href={`blog/${blog.slug}`}>
-              <BlogPost key={index} blog={blog} />
-            </a>
-          );
-        })}
-      </div>
-    </div>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+          {blogs.publication?.posts?.map((blog, index) => {
+            return (
+              <a href={`blog/${blog.slug}`}>
+                <BlogPost key={index} blog={blog} />
+              </a>
+            );
+          })}
+        </section>
+      </article>
+    </main>
   );
 }
 
