@@ -45,7 +45,7 @@ function DetailBlog() {
 
   return (
     <article className="detail-blog-post py-10">
-      <img src={detailBlog.coverImage} class="w-full mt-5" />
+      <img src={detailBlog.coverImage} className="w-full mt-5" />
 
       <h1 class="text-4xl font-bold text-center text-white mt-10 mb-5">
         {detailBlog.title}
