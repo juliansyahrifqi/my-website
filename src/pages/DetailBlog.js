@@ -44,7 +44,7 @@ function DetailBlog() {
 
 
   return (
-    <div className="detail-blog-post py-10">
+    <article className="detail-blog-post py-10">
       <img src={detailBlog.coverImage} class="w-full mt-5" />
 
       <h1 class="text-4xl font-bold text-center text-white mt-10 mb-5">
@@ -65,7 +65,7 @@ function DetailBlog() {
         className={markdownStyle.markdownStyle}
         children={detailBlog.contentMarkdown}
       />
-    </div>
+    </article>
   );
 }
 
