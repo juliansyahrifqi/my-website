@@ -60,6 +60,7 @@ function DetailBlog() {
 
         <p className="text-sm text-gray-400">{formatDate(detailBlog.dateAdded)}</p>
       </div>
+      
       <ReactMarkdown
         className={markdownStyle.markdownStyle}
         children={detailBlog.contentMarkdown}
