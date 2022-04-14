@@ -73,6 +73,8 @@
 
 .markdownStyle a {
     text-decoration: underline;
+    line-break: anywhere;
+    white-space: normal;
 }
 
 .markdownStyle ol > li {
