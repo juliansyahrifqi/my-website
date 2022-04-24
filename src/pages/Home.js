@@ -68,6 +68,18 @@ function Home() {
            </div>
          </section>
 
+         <section className="recent-posts">
+           <h1 className="text-center text-3xl text-white font-medium mt-14">
+             Recent Post
+           </h1>
+
+           {recentBlogs.map((blog, index) => (
+             <a href={`blog/${blog.slug}`}>
+               <BlogPostFeatured blog={blog} key={index} />
+             </a>
+           ))}
+         </section>
+
          <section className="reading-list">
            <h1 className="text-center text-3xl text-white font-medium mt-14">
              Reading List
@@ -75,18 +87,6 @@ function Home() {
 
            {readingLists.map((readingList, index) => (
              <ReadingList list={readingList} key={index} />
-           ))}
-         </section>
-
-         <section className="recent-posts">
-           <h1 className="text-center text-3xl text-white font-medium mt-14">
-             Recent Post
-           </h1>
-
-           { recentBlogs.map((blog, index) => (
-             <a href={`blog/${blog.slug}`}>
-               <BlogPostFeatured blog={blog} key={index} />
-              </a>
            ))}
          </section>
        </article>
