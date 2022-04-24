@@ -4,7 +4,7 @@ import { formatDate } from '../utils/utils';
 
 function BlogPostFeatured({ blog }) {
   return (
-    <div className="card w-full p-6 rounded-xl md:rounded-3xl hover:bg-[#1F2B42] transition ease-in-out hover:outline outline-2 outline-[#4A6597] duration-150 cursor-pointer">
+    <div className="card w-full p-6 rounded-xl md:rounded-3xl hover:bg-[#1F2B42] transition ease-in-out hover:outline outline-2 outline-[#4A6597] duration-150 cursor-pointer mt-8">
       <div className="md:flex md:items-center">
         <img src={blog.coverImage} className="md:w-1/2 rounded-3xl" />
 

@@ -1,11 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import ActivityCard from '../components/ActivityCard';
 import ReadingList from '../components/ReadingList';
+import LoadingRipple from "../components/LoadingRipple";
+import BlogPostFeatured from "../components/BlogPostFeatured";
 
 import { activities, readingLists } from '../utils/data';
 
+import { blogQuery } from "../utils/blogQuery";
+
 function Home() {  
+  
+  const [recentBlogs, setRecentBlogs] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    async function fetchData() {
+      const query = blogQuery("juliansyahrifqi");
+
+      const response = await fetch("https://api.hashnode.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query }),
+      });
+
+      const responseData = await response.json();
+
+      setRecentBlogs(responseData.data.user.publication.posts.slice(0, 1));
+      setLoading(false);
+    }
+
+    fetchData();
+  }, []);
+
+  if (loading) return <LoadingRipple />;
+
    return (
      <main className="Home">
        <article className="container mx-auto py-10">
@@ -40,9 +73,21 @@ function Home() {
              Reading List
            </h1>
 
-            { readingLists.map((readingList, index) => (
-                <ReadingList list={readingList} key={index}/>
-            ))}
+           {readingLists.map((readingList, index) => (
+             <ReadingList list={readingList} key={index} />
+           ))}
+         </section>
+
+         <section className="recent-posts">
+           <h1 className="text-center text-3xl text-white font-medium mt-14">
+             Recent Post
+           </h1>
+
+           { recentBlogs.map((blog, index) => (
+             <a href={`blog/${blog.slug}`}>
+               <BlogPostFeatured blog={blog} key={index} />
+              </a>
+           ))}
          </section>
        </article>
      </main>
