@@ -74,7 +74,7 @@ function Home() {
            </h1>
 
            {recentBlogs.map((blog, index) => (
-             <a href={`blog/${blog.slug}`}>
+             <a href={`blog/${blog.slug}`} key={index}>
                <BlogPostFeatured blog={blog} key={index} />
              </a>
            ))}

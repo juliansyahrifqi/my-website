@@ -50,7 +50,7 @@ function Blog() {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
           {blogs.publication?.posts?.map((blog, index) => {
             return (
-              <a href={`blog/${blog.slug}`}>
+              <a href={`blog/${blog.slug}`} key={index}>
                 <BlogPost key={index} blog={blog} />
               </a>
             );
